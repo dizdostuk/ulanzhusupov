@@ -1,0 +1,29 @@
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 3rem;
+}
+
+a {
+  @include rlwReg();
+
+  text-decoration: none;
+  color: #000;
+}
+
+@import "./blocks/header.scss";
+
+@import "./blocks/about.scss";
+
+@import "./blocks/features.scss";
+
+@import "./blocks/projects.scss";
+
+@import "./blocks/footer.scss";
+
+

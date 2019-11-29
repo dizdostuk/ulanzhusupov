@@ -1,0 +1,36 @@
+@import "../fonts";
+
+.header {
+  height: 85vh;
+  position: relative;
+
+  background-color: #000;
+  background-image: url('../img/h01.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__logo {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+  &__content {
+    &__title {
+      font-family: 'Tomorrow', 'sans-serif';
+      font-weight: bold;
+      font-size: 42px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    &__link {
+      color: #fff;
+      padding: 10px 15px;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      transition: all 0.3s ease-out;
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}
