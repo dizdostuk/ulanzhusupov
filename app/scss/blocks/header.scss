@@ -1,27 +1,55 @@
 @import "../fonts";
+@import "../mixins";
 
 .header {
-  height: 85vh;
+  height: 95vh;
   position: relative;
 
-  background-color: #000;
   background-image: url('../img/h01.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right bottom, rgba(#008bea, 0.5), rgba(#000, 0.2));
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  }
   &__logo {
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
   }
   &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    text-align: center;
     &__title {
       font-family: 'Tomorrow', 'sans-serif';
       font-weight: bold;
       font-size: 42px;
+      line-height: 42px;
       color: #fff;
       text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    &__prof {
+      @include rlwReg();
+      
+      font-size: 22px;
+      color: #fff;
+      margin-bottom: 20px;
     }
     &__link {
+      display: inline-block;
       color: #fff;
       padding: 10px 15px;
       border: 1px solid #fff;
@@ -32,5 +60,9 @@
         color: #000;
       }
     }
+  }
+  canvas {
+    position: relative;
+    z-index: 1;
   }
 }

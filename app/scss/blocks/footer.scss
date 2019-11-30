@@ -1,0 +1,24 @@
+@import "../mixins";
+
+.footer {
+  margin-top: 100px;
+  height: 200px;
+  background-color: #025288;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__list {
+    @include list();
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin-right: 10px;
+      a {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+}

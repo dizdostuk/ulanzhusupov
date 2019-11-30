@@ -24,7 +24,7 @@ function bsReload(done) {
 
 // Gulping styles
 gulp.task('styles', function() {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/scss/index.scss')
         .pipe(sass({
           outputStyle: 'expanded',
           includePaths: [__dirname + '/node_modules']

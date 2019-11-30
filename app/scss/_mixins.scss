@@ -1,7 +1,20 @@
-@import "./fonts";
+// @import "./fonts";
 
 @mixin rlwReg {
   font-family: 'Raleway', 'sans-serif';
   font-weight: 400;
   font-size: 16px;
+}
+
+
+@mixin rlwBold {
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

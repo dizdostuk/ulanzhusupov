@@ -3,10 +3,24 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 3rem;
+  padding: 30px;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+h2 {
+  @include rlwBold();
+  font-size: 24px;
+}
+
+h3 {
+  @include rlwBold();
+  font-size: 18px;
 }
 
 a {
@@ -14,6 +28,30 @@ a {
 
   text-decoration: none;
   color: #000;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  @media screen and (max-width: 1200px) {
+    width: 960px;
+  }
+  @media screen and (max-width: 992px) {
+    width: 720px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 560px;
+  }
+  @media screen and (max-width: 576px) {
+    width: 90%;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  display: none;
 }
 
 @import "./blocks/header.scss";
