@@ -1,5 +1,9 @@
+window.smoothScroll(0, 800);
+
+
+
+// Particle-JS init
 particlesJS('particles-js',
-  
   {
     "particles": {
       "number": {
@@ -10,7 +14,7 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#ffd356"
       },
       "shape": {
         "type": "circle",
@@ -28,7 +32,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 1,
         "random": false,
         "anim": {
           "enable": false,

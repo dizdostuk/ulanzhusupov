@@ -26,5 +26,6 @@
     "gulp-rename": "^1.4.0",
     "gulp-responsive": "^3.0.1",
     "gulp-sass": "^4.0.2"
-  }
+  },
+  "dependencies": {}
 }

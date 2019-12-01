@@ -129,7 +129,10 @@
         top: auto;
         bottom: 0;
         z-index: 2;
-        transform: rotate(0deg);
+        transform: rotateY(0deg);
+      }
+      &:hover .project__item--front {
+        transform: rotateY(0deg);
       }
     }
   }

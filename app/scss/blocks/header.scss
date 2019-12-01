@@ -45,7 +45,7 @@
       @include rlwReg();
       
       font-size: 22px;
-      color: #fff;
+      color: #ffd356;
       margin-bottom: 20px;
     }
     &__link {
@@ -54,7 +54,10 @@
       padding: 10px 15px;
       border: 1px solid #fff;
       border-radius: 10px;
+      background-color: transparent;
       transition: all 0.3s ease-out;
+      cursor: pointer;
+      outline: none;
       &:hover {
         background-color: #fff;
         color: #000;
